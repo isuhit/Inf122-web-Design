@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,42 +14,49 @@
             background-color: #f9f9f9;
             color: #333;
         }
+
         header {
             background-color: #2c3e50;
             color: white;
             padding: 20px;
             text-align: center;
         }
+
         nav {
             background-color: #34495e;
             padding: 10px;
             text-align: center;
         }
+
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
         main {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
             background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
         section {
             margin-bottom: 40px;
             padding-bottom: 20px;
             border-bottom: 1px solid #eee;
         }
+
         section:last-of-type {
             border-bottom: none;
         }
-        
+
         /* Form Styling to keep it clean and matching the theme */
         form {
             background-color: #f2f5f8;
@@ -56,15 +64,18 @@
             border-radius: 5px;
             border-left: 5px solid #2c3e50;
         }
+
         .form-group {
             margin-bottom: 15px;
         }
+
         label {
             display: block;
             font-weight: bold;
             margin-bottom: 5px;
             color: #2c3e50;
         }
+
         input[type="text"],
         input[type="email"],
         input[type="date"],
@@ -76,6 +87,7 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
+
         button {
             background-color: #2c3e50;
             color: white;
@@ -85,17 +97,18 @@
             cursor: pointer;
             font-size: 16px;
         }
+
         button:hover {
             background-color: #34495e;
         }
-        
+
         .audio-container {
             margin: 15px 0;
             background: #eee;
             padding: 10px;
             border-radius: 4px;
         }
-        
+
         footer {
             background-color: #2c3e50;
             color: white;
@@ -105,6 +118,7 @@
         }
     </style>
 </head>
+
 <body>
 
     <header>
@@ -123,12 +137,14 @@
 
         <section class="module-intro">
             <h2>Module 2: HTML5 Forms & Rich Media</h2>
-            <p>Now that you know how the web transfers data, Module 2 focuses on how users actually interact with your site—sending information back to the server using advanced forms and handling multimedia natively.</p>
+            <p>Now that you know how the web transfers data, Module 2 focuses on how users actually interact with your
+                site—sending information back to the server using advanced forms and handling multimedia natively.</p>
         </section>
 
         <section id="unit1" class="unit1">
             <h2>Unit 1: Form Structural Architecture</h2>
-            <p>When collecting data, clarity is key. HTML5 uses specific tags to group related fields logically so users (and screen readers) don't get confused.</p>
+            <p>When collecting data, clarity is key. HTML5 uses specific tags to group related fields logically so users
+                (and screen readers) don't get confused.</p>
             <ul>
                 <li><code>&lt;fieldset&gt;</code>: Groups related elements together inside a visual box.</li>
                 <li><code>&lt;legend&gt;</code>: Acts as a caption or title for the fieldset container.</li>
@@ -137,12 +153,13 @@
 
         <section id="unit2" class="unit2">
             <h2>Unit 2: Standard and Advanced Form Elements</h2>
-            <p>This unit satisfies assignment criteria regarding complex data gathering inputs. Below is an active mock registration setup:</p>
+            <p>This unit satisfies assignment criteria regarding complex data gathering inputs. Below is an active mock
+                registration setup:</p>
 
             <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Form submitted locally!');">
                 <fieldset>
                     <legend><strong>Student Information Profile</strong></legend>
-                    
+
                     <div class="form-group">
                         <label for="username">Full Name:</label>
                         <input type="text" id="username" name="username" placeholder="John Doe" required>
@@ -169,7 +186,8 @@
 
                     <div class="form-group">
                         <label for="comments">Prior Experience / Project Goals:</label>
-                        <textarea id="comments" name="comments" rows="4" placeholder="Tell us about your coding journey..."></textarea>
+                        <textarea id="comments" name="comments" rows="4"
+                            placeholder="Tell us about your coding journey..."></textarea>
                     </div>
 
                     <button type="submit">Register for Track</button>
@@ -179,23 +197,27 @@
 
         <section id="unit3" class="unit3">
             <h2>Unit 3: Native Audio Processing Controls</h2>
-            <p>Prior to HTML5, web engines required third-party plugins (like Flash) to process sound waves. Today, we handle this natively using the <code>&lt;audio&gt;</code> element.</p>
-            
+            <p>Prior to HTML5, web engines required third-party plugins (like Flash) to process sound waves. Today, we
+                handle this natively using the <code>&lt;audio&gt;</code> element.</p>
+
             <div class="audio-container">
                 <p><strong>Listen: Module 2 Audio Lecture Abstract</strong></p>
                 <audio controls style="width: 100%;">
-                    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+                    <source src="./audios//failure.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
             </div>
             <blockquote>
-                💡 <strong>Note:</strong> The <code>controls</code> attribute is mandatory; without it, the audio player stays invisible on the screen.
+                💡 <strong>Note:</strong> The <code>controls</code> attribute is mandatory; without it, the audio player
+                stays invisible on the screen.
             </blockquote>
         </section>
 
         <section class="summary">
             <h2>Summary</h2>
-            <p>You have structured advanced data input elements using semantic groups, integrated data field validations, and deployed native audio elements matching the web application framework design standards.</p>
+            <p>You have structured advanced data input elements using semantic groups, integrated data field
+                validations, and deployed native audio elements matching the web application framework design standards.
+            </p>
         </section>
 
     </main>
@@ -205,4 +227,5 @@
     </footer>
 
 </body>
+
 </html>
