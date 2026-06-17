@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #F7FAFC;
+            color: #334155;
+        }
+
+        header {
+            background: #0B1F3B;
+            color: #F7FAFC;
+            padding: 20px;
+            text-align: center;
+        }
+
+
+
+        nav a {
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+            color: #F7FAFC;
+        }
+
+        nav a:hover {
+            font-size: 20px;
+            text-decoration: none;
+
+            color: #c0cad1;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            background: #ffffff;
+        }
+
+        .contact-info {
+            flex: 1;
+            padding: 20px;
+            background: #f8f8f8;
+            border-radius: 8px;
+        }
+
+        .contact-info ul {
+            padding-left: 0px;
+            list-style: none;
+        }
+
+        .contact-info li {
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 4px solid;
+            border-radius: 8px;
+        }
+
+        .contact-info a {
+            color: #16c4c4;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            color: #0B1F3B;
+        }
+
+        .contact-form {
+            background: #0B1F3B;
+            color: #F7FAFC;
+            flex: 2;
+            padding: 20px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+
+        .module-card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .module-image {
+            flex: 1;
+
+        }
+
+        .module-content {
+            flex: 2;
+
+            max-width: 400px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .module-image img {
+            width: 100%;
+            height: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+            object-fit: cover;
+            border: 4px solid #0B1F3B;
+            ;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #E2E8F0;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+
+            background: #12B981;
+            color: #F7FAFC;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+
+            .module-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .module-content {
+                max-width: 100%;
+            }
+
+            .module-image img {
+                max-width: 250px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact-info">Contact Info</a></li>
+                <li><a href="#contact-form">Contact form</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-info" id="contact-info">
+            <h2 style="text-align: center;">Contact Information</h2>
+            <div class="module-card">
+
+                <div class="module-image">
+                    <img src="./images/prices.jpg" alt="Contact Image">
+                </div>
+                <div class="module-content">
+
+
+                    <ul>
+                        <li><strong>Name:</strong> Isuho Friday</li>
+                        <li><strong>Reg Number:</strong> 25/CO/IS/046</li>
+                        <li><strong>Department:</strong> Information Systems</li>
+                        <li><strong>Email:</strong> <a href="mailto:back20shot@gmail.com">back20shot@gmail.com</a></li>
+                        <li><strong>Phone:</strong> <a href="tel:+2348022837483">+234 802 283 7483</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contact-form" id="contact-form">
+            <h2>Contact Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" name="phone-number" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Comments:</label>
+                <textarea id="message" name="message" required rows="5"></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

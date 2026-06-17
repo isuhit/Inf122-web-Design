@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: CSS3 Foundations & Layout Frameworks</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        /* CSS Demonstration Styles */
+        .box-model-demo {
+            background-color: #f2f5f8;
+            border: 5px solid #2c3e50;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        /* Flexbox Demonstration Styles */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            background-color: #e2e8f0;
+            padding: 15px;
+            border-radius: 4px;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .flex-item {
+            flex: 1;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Course Portal: Web Programming</h1>
+        <p>Module 3: Enhancing Structure with Presentation Layers</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#unit1">Unit 1</a>
+        <a href="#unit2">Unit 2</a>
+        <a href="#unit3">Unit 3</a>
+    </nav>
+
+    <main>
+
+        <section class="module-intro">
+            <h2>Module 3: Styling with CSS3</h2>
+            <p>HTML provides the skeletal structure of a web application, but Cascading Style Sheets (CSS3) control the
+                visual presentation. In this module, we explore how to isolate presentation rules from your structural
+                data.</p>
+        </section>
+
+        <section id="unit1" class="unit1">
+            <h2>Unit 1: Anatomy of CSS & Selectors</h2>
+            <p>CSS works by targeting HTML elements and applying property-value modifications to them. Styling can be
+                applied via three methods:</p>
+            <ul>
+                <li><strong>Inline:</strong> Directly inside the HTML tag using the <code>style</code> attribute (not
+                    recommended for large projects).</li>
+                <li><strong>Internal:</strong> Inside a <code>&lt;style&gt;</code> block in the document head (like this
+                    course portal page).</li>
+                <li><strong>External:</strong> Linked as a separate <code>.css</code> file using a
+                    <code>&lt;link&gt;</code> tag (best practice for production).</li>
+            </ul>
+        </section>
+
+        <section id="unit2" class="unit2">
+            <h2>Unit 2: The CSS Box Model</h2>
+            <p>Every element rendered on a webpage is treated as a rectangular box. Understanding how these boxes
+                calculate space is essential for preventing alignment bugs.</p>
+
+            <div class="box-model-demo">
+                <strong>[Content Area]</strong>
+                <p>Surrounded by Padding (inner space) &rarr; Border (the edge) &rarr; Margin (outer space).</p>
+            </div>
+
+            <ul>
+                <li><strong>Content:</strong> The actual text or image inside the element.</li>
+                <li><strong>Padding:</strong> Clear space immediately surrounding the content (inside the border).</li>
+                <li><strong>Border:</strong> A line encompassing the padding and content.</li>
+                <li><strong>Margin:</strong> Clear space outside the border used to separate the element from its
+                    neighbors.</li>
+            </ul>
+        </section>
+
+        <section id="unit3" class="unit3">
+            <h2>Unit 3: Modern Layout Layouts (Flexbox & Grid)</h2>
+            <p>Legacy layouts relied heavily on table elements or CSS floats. Modern CSS introduces <strong>Flexbox
+                    (Flexible Box Layout)</strong> for fast, responsive one-dimensional alignments.</p>
+
+            <p>Below is a live rendering of a 3-column responsive row powered entirely by <code>display: flex;</code>:
+            </p>
+
+            <div class="flex-container">
+                <div class="flex-item">Column 1</div>
+                <div class="flex-item">Column 2</div>
+                <div class="flex-item">Column 3</div>
+            </div>
+
+            <p style="margin-top: 15px;">By altering a single property (like <code>flex-direction</code>), this desktop
+                row can effortlessly stack vertically into a single-column layout on mobile viewports.</p>
+        </section>
+
+        <section class="summary">
+            <h2>Summary</h2>
+            <p>You have decoupled structural content from stylistic elements, calculated box dimensions using the CSS
+                box model framework, and built a fluid, responsive alignment layout using modern Flexbox parameters.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Programming Learning Module Portal. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
